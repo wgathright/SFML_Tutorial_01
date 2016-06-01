@@ -18,8 +18,13 @@ int main()
 	texture.loadFromFile("sprite2.png");
 
 
-	sf::Sprite sprite(texture);
-	sprite.setTextureRect(sf::IntRect(0, 0, 50, 50));
+	sf::Sprite sprite;
+	sprite.setTexture(texture);
+	sprite.setOrigin(sf::Vector2f(10, 0));
+
+	//////Tutorial 14 -- unused code -- ///////
+	//sprite.setColor(sf::Color(255, 0, 0));
+	//sprite.setColor(sf::Color(255, 255, 255, 128));
 	
 
 	
